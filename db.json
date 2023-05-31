@@ -1,0 +1,8 @@
+{
+    "productos": [
+      { "id": 1, "nombreProducto": "café", "descripcion": "alguna descripcion...", "precio": 350, "categoria": "bebida caliente", "imagen":"https://images.pexels.com/photos/15017006/pexels-photo-15017006/free-photo-of-corazon-cafe-mano-capuchino.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" }
+    ],
+    "usuarios": [
+      { "id": 1, "nombreUsuario": "admin", "email": "admin@rollingcode.com", "password": "12345678" }
+    ]
+}
