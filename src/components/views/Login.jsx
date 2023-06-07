@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 import { useNavigate } from "react-router-dom";
 
 
-const Login = () => {
+const Login = ({setUsuarioLogueado}) => {
   const { register, handleSubmit, formState: { errors}, reset } = useForm();
   const navegacion = useNavigate();
 
@@ -20,6 +20,7 @@ const Login = () => {
           `${respuesta.nombreUsuario} iniciaste sesion correctamente`,
           'success'
         );
+        setUsuarioLogueado(respuesta);
         //redireccionar
         navegacion('/administrador');
       }else{
