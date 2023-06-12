@@ -53,4 +53,18 @@ export const consultaBorrarProducto = async (id) =>{
         console.log(error);
     }
 }
+export const consultaAgregarProducto = async (producto) =>{
+    try{
+        const respuesta = await fetch(URLProducto, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(producto)
+        });
+        return respuesta;
+    }catch(error){
+        console.log(error);
+    }
+}
 

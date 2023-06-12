@@ -13,6 +13,7 @@ const CrearProducto = () => {
   const onSubmit = (productoNuevo) => {
     console.log(productoNuevo);
    
+   
   };
 
   
@@ -80,7 +81,7 @@ const CrearProducto = () => {
           <Form.Label>Categoria*</Form.Label>
           <Form.Select
             {...register("categoria", {
-              required: "La imagen es obligatoria",
+              required: "La categoria es obligatoria",
             })}
           >
             <option value="">Seleccione una opcion</option>

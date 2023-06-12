@@ -7,6 +7,22 @@
       "precio": 350,
       "categoria": "bebida caliente",
       "imagen": "https://images.pexels.com/photos/15017006/pexels-photo-15017006/free-photo-of-corazon-cafe-mano-capuchino.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "categoria": "dulce",
+      "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "nombreProducto": "medialuna",
+      "descripcion": "alguna descripcion....",
+      "precio": 187,
+      "id": 2
+    },
+    {
+      "categoria": "dulce",
+      "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "nombreProducto": "brownie",
+      "descripcion": "alguna descripcion....",
+      "precio": 300,
+      "id": 3
     }
   ],
   "usuarios": [
