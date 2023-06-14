@@ -17,12 +17,32 @@
       "id": 2
     },
     {
-      "categoria": "dulce",
-      "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "nombreProducto": "brownie",
-      "descripcion": "alguna descripcion....",
-      "precio": 300,
+      "precio": "300",
+      "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "categoria": "dulce",
       "id": 3
+    },
+    {
+      "nombreProducto": "pan 1kg",
+      "precio": "600",
+      "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "categoria": "salado",
+      "id": 4
+    },
+    {
+      "nombreProducto": "té de manzanilla",
+      "precio": "250",
+      "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "categoria": "bebida caliente",
+      "id": 5
+    },
+    {
+      "nombreProducto": "medialuna de chocolate",
+      "precio": "160",
+      "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "categoria": "dulce",
+      "id": 6
     }
   ],
   "usuarios": [
