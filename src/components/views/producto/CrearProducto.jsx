@@ -31,7 +31,7 @@ const CrearProducto = () => {
       <h1 className="display-4 mt-5">Nuevo producto</h1>
       <hr />
       <Form onSubmit={handleSubmit(onSubmit)}>
-        <Form.Group className="mb-3" controlId="formNombreProdcuto">
+        <Form.Group className="mb-3" controlId="formNombreProducto">
           <Form.Label>Producto*</Form.Label>
           <Form.Control
             type="text"

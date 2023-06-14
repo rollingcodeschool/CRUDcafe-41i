@@ -9,23 +9,22 @@
       "imagen": "https://images.pexels.com/photos/15017006/pexels-photo-15017006/free-photo-of-corazon-cafe-mano-capuchino.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      "categoria": "dulce",
-      "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "nombreProducto": "medialuna",
-      "descripcion": "alguna descripcion....",
-      "precio": 187,
+      "precio": "150",
+      "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "categoria": "salado",
       "id": 2
     },
     {
       "nombreProducto": "brownie",
-      "precio": "300",
+      "precio": "160",
       "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "categoria": "dulce",
       "id": 3
     },
     {
-      "nombreProducto": "pan 1kg",
-      "precio": "600",
+      "nombreProducto": "pan 2kg (promoción)",
+      "precio": "610",
       "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "categoria": "salado",
       "id": 4

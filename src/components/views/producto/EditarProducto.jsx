@@ -1,17 +1,46 @@
+import { useEffect } from "react";
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { useNavigate, useParams } from "react-router-dom";
+import { consultaEditarProducto, consultaProducto } from "../../helpers/queries";
+import Swal from "sweetalert2";
+
 
 const EditarProducto = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-    reset,
+    setValue
   } = useForm();
+  const {id} = useParams();
+  const navegacion = useNavigate()
 
-  const onSubmit = (productoNuevo) => {
-    console.log(productoNuevo);
-   
+  useEffect(()=>{
+    consultaProducto(id).then((respuesta)=>{
+      if(respuesta){
+        console.log('tengo que cargar el objeto en el formulario')
+        console.log(respuesta);
+        setValue('nombreProducto', respuesta.nombreProducto);
+        setValue('precio', respuesta.precio);
+        setValue('imagen', respuesta.imagen);
+        setValue('categoria', respuesta.categoria);
+      }else{
+        Swal.fire('Ocurrio un error', `No se puede editar el producto, intentelo mas tarde`, 'error');
+      }
+    })
+  }, [])
+
+  const onSubmit = (productoEditado) => {
+    console.log(productoEditado);
+   consultaEditarProducto(productoEditado, id).then((respuesta)=>{
+    if(respuesta && respuesta.status === 200){
+      Swal.fire('Producto editado', `El producto ${productoEditado.nombreProducto} fue editado correctamente`, 'success');
+      navegacion('/administrador');
+    }else{
+      Swal.fire('Ocurrio un error', `El producto ${productoEditado.nombreProducto} no fue editado, intentelo mas tarde`, 'error');
+    }
+   })
   };
 
   return (
@@ -19,7 +48,7 @@ const EditarProducto = () => {
       <h1 className="display-4 mt-5">Editar producto</h1>
       <hr />
       <Form onSubmit={handleSubmit(onSubmit)}>
-        <Form.Group className="mb-3" controlId="formNombreProdcuto">
+        <Form.Group className="mb-3" controlId="formNombreProducto">
           <Form.Label>Producto*</Form.Label>
           <Form.Control
             type="text"
