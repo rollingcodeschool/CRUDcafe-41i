@@ -90,6 +90,27 @@ const EditarProducto = () => {
             {errors.precio?.message}
           </Form.Text>
         </Form.Group>
+        <Form.Group className="mb-3" controlId="formDescripcion">
+          <Form.Label>Descripcion*</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Ej: café torrado"
+            {...register("descripcion", {
+              required: "la descripcion del producto es obligatoria",
+              minLength: {
+                value: 2,
+                message: "La cantidad minima de caracteres es de 2 digitos",
+              },
+              maxLength: {
+                value: 300,
+                message: "La cantidad maxima de caracteres es de 2 digitos",
+              },
+            })}
+          />
+          <Form.Text className="text-danger">
+            {errors.descripcion?.message}
+          </Form.Text>
+        </Form.Group>
         <Form.Group className="mb-3" controlId="formImagen">
           <Form.Label>Imagen URL*</Form.Label>
           <Form.Control

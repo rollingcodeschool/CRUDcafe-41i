@@ -3,6 +3,7 @@
     {
       "nombreProducto": "café",
       "precio": "390",
+      "descripcion": "una buena descripcion de cafe",
       "imagen": "https://images.pexels.com/photos/15017006/pexels-photo-15017006/free-photo-of-corazon-cafe-mano-capuchino.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoria": "bebida caliente",
       "id": 1
@@ -12,6 +13,7 @@
       "precio": "150",
       "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "categoria": "salado",
+      "descripcion": "algo",
       "id": 2
     },
     {
@@ -19,6 +21,7 @@
       "precio": "160",
       "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "categoria": "dulce",
+      "descripcion": "algo",
       "id": 3
     },
     {
@@ -26,6 +29,7 @@
       "precio": "610",
       "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "categoria": "salado",
+      "descripcion": "algo",
       "id": 4
     },
     {
@@ -33,6 +37,7 @@
       "precio": "250",
       "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "categoria": "bebida caliente",
+      "descripcion": "algo",
       "id": 5
     },
     {
@@ -40,6 +45,7 @@
       "precio": "160",
       "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "categoria": "dulce",
+      "descripcion": "algo",
       "id": 6
     }
   ],

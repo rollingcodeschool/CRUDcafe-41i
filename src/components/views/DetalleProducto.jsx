@@ -1,6 +1,29 @@
 import { Container, Card, Row, Col } from "react-bootstrap";
+import { consultaProducto } from "../helpers/queries";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const DetalleProducto = () => {
+  const { id } = useParams();
+  const [producto, setProducto] = useState({});
+  useEffect(() => {
+    consultaProducto(id).then((respuesta) => {
+      if (respuesta) {
+        //cargar los datos de la repuesta en el formulario
+        console.log(respuesta)
+        setProducto(respuesta);
+      } else {
+        Swal.fire(
+          "Ocurrio un error",
+          "Intente esta operación en unos minutos",
+          "error"
+        );
+      }
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <Container className="my-3 mainSection">
       <Card>
@@ -8,20 +31,24 @@ const DetalleProducto = () => {
           <Col md={6}>
             <Card.Img
               variant="top"
-              src="https://images.pexels.com/photos/10273537/pexels-photo-10273537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src={producto.imagen}
             />
           </Col>
           <Col md={6}>
             <Card.Body>
-              <Card.Title>MOCHACCINO CANELA</Card.Title>
+              <Card.Title>{producto.nombreProducto}</Card.Title>
               <hr />
               <Card.Text>
-              Combinación perfecta entre leche, choclate, café intenso y un toque de canela. Café con granos 100% de arábica brasileña. Todo en una capsula inteligente.
-              <br/>
-              <br/>
-              <span className="text-danger fw-semibold ">Categoria:</span> Café
-              <br />
-              <span className="text-danger fw-semibold ">Precio:</span> $1.740,00</Card.Text>
+              {producto.descripcion}
+                <br />
+                <br />
+                <span className="text-danger fw-semibold ">
+                  Categoria:
+                </span> {producto.categoria}
+                <br />
+                <span className="text-danger fw-semibold ">Precio:</span>{" "}
+                ${producto.precio}
+              </Card.Text>
             </Card.Body>
           </Col>
         </Row>
