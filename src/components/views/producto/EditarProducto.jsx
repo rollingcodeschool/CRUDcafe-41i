@@ -25,6 +25,7 @@ const EditarProducto = () => {
         setValue('precio', respuesta.precio);
         setValue('imagen', respuesta.imagen);
         setValue('categoria', respuesta.categoria);
+        setValue('descripcion', respuesta.descripcion);
       }else{
         Swal.fire('Ocurrio un error', `No se puede editar el producto, intentelo mas tarde`, 'error');
       }
